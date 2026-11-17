@@ -1,0 +1,68 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 60,
+  "bottomRowBeforeCollapse": 60,
+  "boxShadow": "none",
+  "closeOnSelection": true,
+  "dateFormat": "MM-DD-YYYY",
+  "datePickerType": "DATE_PICKER",
+  "defaultDate": "2026-11-17T12:50:57.867Z",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "firstDayOfWeek": 0,
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": "{{ selTipo.selectedOptionValue === 'D' }}\n",
+  "key": "8bqwv29q0p",
+  "label": "Fecha ",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 2,
+  "maxDate": "2121-12-31T18:29:00.000Z",
+  "maxDynamicHeight": 9000,
+  "minDate": "1920-12-31T18:30:00.000Z",
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 49,
+  "mobileLeftColumn": 28,
+  "mobileRightColumn": 48,
+  "mobileTopRow": 42,
+  "needsErrorInfo": false,
+  "originalBottomRow": 60,
+  "originalTopRow": 46,
+  "parentColumnSpace": 9.6728515625,
+  "parentId": "55dnphzt4n",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 21,
+  "shortcuts": false,
+  "timePrecision": "minute",
+  "topRow": 46,
+  "topRowBeforeCollapse": 46,
+  "type": "DATE_PICKER_WIDGET2",
+  "version": 2,
+  "widgetId": "ycjd6papm5",
+  "widgetName": "dpFecha"
+}

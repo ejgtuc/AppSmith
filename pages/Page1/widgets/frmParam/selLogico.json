@@ -1,0 +1,69 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 68,
+  "bottomRowBeforeCollapse": 68,
+  "boxShadow": "none",
+  "defaultOptionValue": "GREEN",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": "{{ selTipo.selectedOptionValue === 'F' }}\n",
+  "key": "91tlgoehvn",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Logico",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 2,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 69,
+  "mobileLeftColumn": 3,
+  "mobileRightColumn": 23,
+  "mobileTopRow": 62,
+  "needsErrorInfo": false,
+  "optionLabel": "name",
+  "optionValue": "code",
+  "originalBottomRow": 68,
+  "originalTopRow": 61,
+  "parentColumnSpace": 9.6728515625,
+  "parentId": "55dnphzt4n",
+  "parentRowSpace": 10,
+  "placeholderText": "Select option",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 22,
+  "serverSideFiltering": false,
+  "sourceData": "[\n  { \"label\": \"(vacío)\", \"value\": \"\" },\n  { \"label\": \"Sí\", \"value\": \"S\" },\n  { \"label\": \"No\", \"value\": \"N\" }\n]\n",
+  "topRow": 61,
+  "topRowBeforeCollapse": 61,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "fcuozx132j",
+  "widgetName": "selLogico"
+}
