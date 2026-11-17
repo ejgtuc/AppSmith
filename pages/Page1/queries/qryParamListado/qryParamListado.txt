@@ -1,0 +1,4 @@
+SELECT * FROM public."param"
+WHERE codigo ILIKE '%' || {{ inpBuscar.text }} || '%'
+   OR descripcion ILIKE '%' || {{ inpBuscar.text }} || '%'
+LIMIT 10;

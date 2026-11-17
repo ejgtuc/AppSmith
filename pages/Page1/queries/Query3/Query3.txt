@@ -1,0 +1,7 @@
+INSERT INTO public.param
+  (codigo, descripcion, tipo, numero, caracter, fecha, logico, modulos,
+   fec_grab, usr_grab, wks_grab, tip_grab, prg_grab)
+VALUES
+  ('PRB001', 'Parametro de prueba uno',  'S', 10.5,  'A', '2026-01-15', 'S', 'VENTAS',  now(), 'WEB', 'LOCAL', 'I', 'seed'),
+  ('PRB002', 'Parametro de prueba dos',  'U', 20.25, 'B', '2026-02-20', 'N', 'STOCK',   now(), 'WEB', 'LOCAL', 'I', 'seed'),
+  ('PRB003', 'Parametro de prueba tres', 'T', 0,     'C', NULL,         'S', 'COMPRAS', now(), 'WEB', 'LOCAL', 'I', 'seed');
