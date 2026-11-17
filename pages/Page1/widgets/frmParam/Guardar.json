@@ -49,7 +49,7 @@
   "resetFormOnClick": true,
   "responsiveBehavior": "hug",
   "rightColumn": 61,
-  "text": "Submit",
+  "text": "Guardar",
   "topRow": 85,
   "type": "BUTTON_WIDGET",
   "version": 1,
