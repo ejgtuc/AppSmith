@@ -39,7 +39,7 @@
   "mobileRightColumn": 62,
   "mobileTopRow": 33,
   "needsErrorInfo": false,
-  "onClick": "{{qryParamInsert.run().then(() => {\n  qryParamListado.run();\n});}}",
+  "onClick": "{{qryParamInsert.run().then(() => {\n  qryParamListado.run();\n});\nshowModal(mdlConfirmar.name);}}",
   "originalBottomRow": 89,
   "originalTopRow": 85,
   "parentId": "55dnphzt4n",
