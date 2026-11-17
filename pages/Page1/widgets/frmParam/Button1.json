@@ -12,6 +12,14 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isDisabled"
     }
   ],
   "dynamicTriggerPathList": [
@@ -20,7 +28,7 @@
     }
   ],
   "isDefaultClickDisabled": true,
-  "isDisabled": false,
+  "isDisabled": "{{ !inpCodigo.text ||\n   !inpDescripcion.text ||\n   !selTipo.selectedOptionValue ||\n   (selTipo.selectedOptionValue === 'N' && !inpNumero.text) ||\n   (selTipo.selectedOptionValue === 'C' && !inpCaracter.text) ||\n   (selTipo.selectedOptionValue === 'D' && !dpFecha.formattedDate) ||\n   (selTipo.selectedOptionValue === 'L' && !selLogico.selectedOptionValue) ||\n   (selTipo.selectedOptionValue === 'T' && !dpTimestamp.formattedDate) }}\n",
   "isLoading": false,
   "isVisible": true,
   "key": "zy7g5fk5pf",
@@ -31,7 +39,9 @@
   "mobileRightColumn": 62,
   "mobileTopRow": 33,
   "needsErrorInfo": false,
-  "onClick": "{{qryParamInsert.run().then(() => {\n  qryParamListado.run();\n});\nqryParamListado.run()}}",
+  "onClick": "{{qryParamInsert.run().then(() => {\n  qryParamListado.run();\n});}}",
+  "originalBottomRow": 89,
+  "originalTopRow": 85,
   "parentId": "55dnphzt4n",
   "placement": "CENTER",
   "recaptchaType": "V3",
