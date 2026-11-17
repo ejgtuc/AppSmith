@@ -6,7 +6,7 @@
   "bottomRowBeforeCollapse": 60,
   "boxShadow": "none",
   "closeOnSelection": true,
-  "dateFormat": "MM-DD-YYYY",
+  "dateFormat": "YYYY-MM-DD",
   "datePickerType": "DATE_PICKER",
   "defaultDate": "2026-11-17T12:50:57.867Z",
   "dynamicBindingPathList": [
