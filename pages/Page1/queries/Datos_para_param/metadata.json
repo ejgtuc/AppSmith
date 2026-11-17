@@ -1,6 +1,6 @@
 {
   "gitSyncId": "6afb0abfb7e50bd190f2e691_7165b9c6-ac61-48ab-bc55-f1c34986616f",
-  "id": "Page1_Query3",
+  "id": "Page1_Datos_para_param",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -23,7 +23,7 @@
       "pluginId": "postgres-plugin"
     },
     "dynamicBindingPathList": [],
-    "name": "Query3",
+    "name": "Datos_para_param",
     "pageId": "Page1",
     "runBehaviour": "MANUAL",
     "userSetOnLoad": false

@@ -1,0 +1,15 @@
+INSERT INTO public.param
+  (codigo, descripcion, tipo, numero, caracter, fecha, logico, modulos, timestamp,
+   fec_grab, usr_grab, wks_grab, tip_grab, prg_grab)
+VALUES
+  ({{ inpCodigo.text }},
+   {{ inpDescripcion.text }},
+   {{ selTipo.selectedOptionValue }},
+   {{ selTipo.selectedOptionValue === 'N' ? Number(inpNumero.text) : null }},
+   {{ selTipo.selectedOptionValue === 'C' ? inpCaracter.text : null }},
+   {{ selTipo.selectedOptionValue === 'D' ? dpFecha.formattedDate : null }},
+   {{ selTipo.selectedOptionValue === 'L' ? selLogico.selectedOptionValue : null }},
+   {{ inpModulos.text }},
+   {{ selTipo.selectedOptionValue === 'T' ? dpTimestamp.formattedDate : null }},
+   now(), 'WEB', 'LOCAL', 'I', 'appsmith/param')
+RETURNING id;
