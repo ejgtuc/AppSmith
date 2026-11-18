@@ -41,7 +41,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 57,
   "shouldTruncate": false,
-  "text": "¿Guardar el parámetro {{ inpCodigo.text }}?",
+  "text": "{{ appsmith.store.accionModal === 'eliminar' ? '¿Borrar el parámetro ' + inpCodigo.text + '?' : '¿Guardar el parámetro ' + inpCodigo.text + '?' }}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 1,

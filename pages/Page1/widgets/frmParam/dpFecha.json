@@ -8,7 +8,7 @@
   "closeOnSelection": true,
   "dateFormat": "YYYY-MM-DD",
   "datePickerType": "DATE_PICKER",
-  "defaultDate": "{{ tblParam.selectedRow.fecha }}",
+  "defaultDate": "{{ appsmith.store.filaSel ? tblParam.selectedRow.fecha : '' }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"

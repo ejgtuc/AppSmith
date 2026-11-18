@@ -1,0 +1,2 @@
+DELETE FROM public.param
+WHERE id = {{ tblParam.selectedRow.id }};

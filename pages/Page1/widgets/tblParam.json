@@ -56,10 +56,8 @@
   "customIsLoading": false,
   "customIsLoadingValue": "",
   "defaultPageSize": 0,
-  "defaultSelectedRowIndex": "0",
-  "defaultSelectedRowIndices": [
-    0
-  ],
+  "defaultSelectedRowIndex": "-1",
+  "defaultSelectedRowIndices": [],
   "delimiter": ",",
   "dynamicBindingPathList": [
     {
@@ -157,7 +155,7 @@
   "mobileRightColumn": 37,
   "mobileTopRow": 7,
   "needsErrorInfo": false,
-  "onRowSelected": "{{ resetWidget(\"inpCodigo\"); resetWidget(\"inpDescripcion\");\n   resetWidget(\"selTipo\"); resetWidget(\"inpNumero\");\n   resetWidget(\"inpCaracter\"); resetWidget(\"dpFecha\");\n   resetWidget(\"selLogico\"); resetWidget(\"dpTimestamp\");\n   resetWidget(\"inpModulos\"); }}\n",
+  "onRowSelected": "{{ storeValue(\"filaSel\", tblParam.selectedRow.id); setTimeout(() => { resetWidget(\"inpCodigo\"); resetWidget(\"inpDescripcion\"); resetWidget(\"selTipo\"); resetWidget(\"inpNumero\"); resetWidget(\"inpCaracter\"); resetWidget(\"dpFecha\"); resetWidget(\"selLogico\"); resetWidget(\"dpTimestamp\"); resetWidget(\"inpModulos\"); }, 150); }}",
   "parentColumnSpace": 16.734375,
   "parentId": "0",
   "parentRowSpace": 10,

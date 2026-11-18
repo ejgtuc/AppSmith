@@ -1,0 +1,29 @@
+INSERT INTO public.param
+  (codigo, descripcion, tipo, numero, caracter, fecha, logico, modulos, timestamp,
+   fec_grab, usr_grab, wks_grab, tip_grab, prg_grab)
+VALUES
+  (NULLIF({{ inpCodigo.text }}, ''),
+   {{ inpDescripcion.text }},
+   {{ selTipo.selectedOptionValue }},
+   {{ selTipo.selectedOptionValue === 'N' ? Number(inpNumero.text) : null }},
+   {{ selTipo.selectedOptionValue === 'C' ? inpCaracter.text : null }},
+   {{ selTipo.selectedOptionValue === 'D' ? dpFecha.formattedDate : null }},
+   {{ selTipo.selectedOptionValue === 'L' ? selLogico.selectedOptionValue : null }},
+   {{ inpModulos.text }},
+   {{ selTipo.selectedOptionValue === 'T' ? dpTimestamp.formattedDate : null }},
+   now(), 'WEB', 'LOCAL', 'I', 'appsmith/param')
+ON CONFLICT (codigo) DO UPDATE SET
+   descripcion = EXCLUDED.descripcion,
+   tipo        = EXCLUDED.tipo,
+   numero      = EXCLUDED.numero,
+   caracter    = EXCLUDED.caracter,
+   fecha       = EXCLUDED.fecha,
+   logico      = EXCLUDED.logico,
+   modulos     = EXCLUDED.modulos,
+   timestamp   = EXCLUDED.timestamp,
+   fec_grab    = now(),
+   usr_grab    = 'WEB',
+   wks_grab    = 'LOCAL',
+   tip_grab    = 'U',
+   prg_grab    = 'appsmith/param'
+RETURNING id, (xmax = 0) AS insertado;

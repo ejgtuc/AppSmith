@@ -3,9 +3,9 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 94,
+  "bottomRow": 90,
   "boxShadow": "none",
-  "defaultText": "{{ tblParam.selectedRow.modulos }}",
+  "defaultText": "{{ appsmith.store.filaSel ? tblParam.selectedRow.modulos : '' }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -41,8 +41,8 @@
   "mobileRightColumn": 23,
   "mobileTopRow": 77,
   "needsErrorInfo": false,
-  "originalBottomRow": 94,
-  "originalTopRow": 84,
+  "originalBottomRow": 90,
+  "originalTopRow": 80,
   "parentColumnSpace": 9.2734375,
   "parentId": "55dnphzt4n",
   "parentRowSpace": 10,
@@ -53,7 +53,7 @@
   "rightColumn": 22,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
-  "topRow": 84,
+  "topRow": 80,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "h3j57clvva",

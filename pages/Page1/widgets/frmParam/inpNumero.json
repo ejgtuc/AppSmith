@@ -6,7 +6,7 @@
   "bottomRow": 40,
   "bottomRowBeforeCollapse": 40,
   "boxShadow": "none",
-  "defaultText": "{{ tblParam.selectedRow.numero }}",
+  "defaultText": "{{ appsmith.store.filaSel ? tblParam.selectedRow.numero : '' }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"

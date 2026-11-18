@@ -5,7 +5,7 @@
   "bottomRow": 71,
   "bottomRowBeforeCollapse": 71,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ tblParam.selectedRow.logico }}",
+  "defaultOptionValue": "{{ appsmith.store.filaSel ? tblParam.selectedRow.logico : '' }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"

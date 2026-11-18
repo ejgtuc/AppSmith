@@ -5,7 +5,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 13,
   "boxShadow": "none",
-  "defaultText": "{{ tblParam.selectedRow.codigo }}",
+  "defaultText": "{{ appsmith.store.filaSel ? tblParam.selectedRow.codigo : '' }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"

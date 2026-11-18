@@ -4,9 +4,9 @@
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 49,
-  "bottomRowBeforeCollapse": 42,
+  "bottomRowBeforeCollapse": 49,
   "boxShadow": "none",
-  "defaultText": "{{ tblParam.selectedRow.caracter }}",
+  "defaultText": "{{ appsmith.store.filaSel ? tblParam.selectedRow.caracter : '' }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -61,7 +61,7 @@
   "rightColumn": 22,
   "showStepArrows": false,
   "topRow": 42,
-  "topRowBeforeCollapse": 35,
+  "topRowBeforeCollapse": 42,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "mshwdcsvza",

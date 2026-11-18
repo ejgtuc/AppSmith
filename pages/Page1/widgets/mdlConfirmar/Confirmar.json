@@ -13,9 +13,6 @@
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "isDisabled"
     }
   ],
   "dynamicPropertyPathList": [
@@ -32,7 +29,7 @@
     }
   ],
   "isDefaultClickDisabled": true,
-  "isDisabled": "{{ !inpCodigo.text || !selTipo.selectedOptionValue }}\n",
+  "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
   "key": "zy7g5fk5pf",
@@ -43,7 +40,7 @@
   "mobileRightColumn": 63,
   "mobileTopRow": 18,
   "needsErrorInfo": false,
-  "onClick": "{{ qryParamInsert.run().then(() => {\n     qryParamListado.run();\n     closeModal(\"mdlConfirmar\");\n   }); }}\n",
+  "onClick": "{{ appsmith.store.accionModal === \"eliminar\" ? qryParamDelete.run().then(() => { qryParamListado.run(); removeValue(\"filaSel\"); storeValue(\"formLimpiar\", true); closeModal(\"mdlConfirmar\"); removeValue(\"accionModal\"); setTimeout(() => { resetWidget(\"inpCodigo\"); resetWidget(\"inpDescripcion\"); resetWidget(\"selTipo\"); resetWidget(\"inpNumero\"); resetWidget(\"inpCaracter\"); resetWidget(\"dpFecha\"); resetWidget(\"selLogico\"); resetWidget(\"dpTimestamp\"); resetWidget(\"inpModulos\"); }, 150); }) : qryParamUpsert.run().then(() => { qryParamListado.run(); removeValue(\"filaSel\"); storeValue(\"formLimpiar\", true); closeModal(\"mdlConfirmar\"); removeValue(\"accionModal\"); setTimeout(() => { resetWidget(\"inpCodigo\"); resetWidget(\"inpDescripcion\"); resetWidget(\"selTipo\"); resetWidget(\"inpNumero\"); resetWidget(\"inpCaracter\"); resetWidget(\"dpFecha\"); resetWidget(\"selLogico\"); resetWidget(\"dpTimestamp\"); resetWidget(\"inpModulos\"); }, 150); }) }}",
   "originalBottomRow": 22,
   "originalTopRow": 18,
   "parentId": "68j9w4qkpg",
