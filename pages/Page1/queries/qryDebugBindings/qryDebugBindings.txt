@@ -1,5 +1,10 @@
-SELECT {{ inpCodigo.text }}              AS codigo,
-       {{ inpDescripcion.text }}         AS descripcion,
-       {{ selTipo.selectedOptionValue }} AS tipo,
-       {{ inpNumero.text }}              AS numero_raw,
-       {{ inpModulos.text }}             AS modulos;
+SELECT string_agg(
+         id::text
+         || ' | codigo=[' || codigo || ']'
+         || ' | tipo=[' || COALESCE(TRIM(tipo), '') || ']'
+         || ' | desc=[' || COALESCE(descripcion, '') || ']'
+         || ' | num=[' || COALESCE(numero::text, '') || ']'
+         || ' | tip_grab=[' || COALESCE(TRIM(tip_grab), '') || ']',
+         E'\n' ORDER BY id DESC) AS resumen
+FROM (SELECT * FROM public.param ORDER BY id DESC LIMIT 5) t;
+

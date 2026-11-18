@@ -4,7 +4,7 @@
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 49,
-  "bottomRowBeforeCollapse": 49,
+  "bottomRowBeforeCollapse": 42,
   "boxShadow": "none",
   "defaultText": "",
   "dynamicBindingPathList": [
@@ -58,7 +58,7 @@
   "rightColumn": 22,
   "showStepArrows": false,
   "topRow": 42,
-  "topRowBeforeCollapse": 42,
+  "topRowBeforeCollapse": 35,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "mshwdcsvza",

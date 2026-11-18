@@ -56,7 +56,7 @@
   "customIsLoading": false,
   "customIsLoadingValue": "",
   "defaultPageSize": 0,
-  "defaultSelectedRowIndex": 0,
+  "defaultSelectedRowIndex": "0",
   "defaultSelectedRowIndices": [
     0
   ],
@@ -124,9 +124,16 @@
   "dynamicPropertyPathList": [
     {
       "key": "tableData"
+    },
+    {
+      "key": "onRowSelected"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onRowSelected"
+    }
+  ],
   "enableClientSideSearch": true,
   "endOfData": false,
   "flexVerticalAlignment": "start",
@@ -150,6 +157,7 @@
   "mobileRightColumn": 37,
   "mobileTopRow": 7,
   "needsErrorInfo": false,
+  "onRowSelected": "{{ resetWidget(\"inpCodigo\"); resetWidget(\"inpDescripcion\");\n   resetWidget(\"selTipo\"); resetWidget(\"inpNumero\");\n   resetWidget(\"inpCaracter\"); resetWidget(\"dpFecha\");\n   resetWidget(\"selLogico\"); resetWidget(\"dpTimestamp\");\n   resetWidget(\"inpModulos\"); }}\n",
   "parentColumnSpace": 16.734375,
   "parentId": "0",
   "parentRowSpace": 10,
