@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT id, codigo, descripcion, tipo, numero, caracter, fecha, timestamp, logico,\n       modulos, fec_grab, tip_grab\nFROM public.param\nORDER BY id DESC\nLIMIT 50;\n\n",
+      "body": "SELECT id, codigo, descripcion, tipo, numero, caracter, fecha, logico,\n       modulos, timestamp, fec_grab, tip_grab\nFROM public.param\nWHERE ({{ inpBuscar.text || '' }} = ''\n       OR codigo ILIKE '%' || {{ inpBuscar.text || '' }} || '%'\n       OR descripcion ILIKE '%' || {{ inpBuscar.text || '' }} || '%')\nORDER BY id DESC\nLIMIT 50;\n\n\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -22,7 +22,11 @@
       "name": "Postgres_prueba",
       "pluginId": "postgres-plugin"
     },
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
     "name": "qryParamListado",
     "pageId": "Page2",
     "runBehaviour": "AUTOMATIC",

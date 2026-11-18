@@ -1,6 +1,10 @@
-SELECT id, codigo, descripcion, tipo, numero, caracter, fecha, timestamp, logico,
-       modulos, fec_grab, tip_grab
+SELECT id, codigo, descripcion, tipo, numero, caracter, fecha, logico,
+       modulos, timestamp, fec_grab, tip_grab
 FROM public.param
+WHERE ({{ inpBuscar.text || '' }} = ''
+       OR codigo ILIKE '%' || {{ inpBuscar.text || '' }} || '%'
+       OR descripcion ILIKE '%' || {{ inpBuscar.text || '' }} || '%')
 ORDER BY id DESC
 LIMIT 50;
+
 
