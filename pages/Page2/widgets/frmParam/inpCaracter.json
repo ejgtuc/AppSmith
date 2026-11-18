@@ -5,13 +5,16 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 45,
   "boxShadow": "none",
-  "defaultText": "",
+  "defaultText": "{{ appsmith.store.filaSel ? tblParam.selectedRow.caracter : '' }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "defaultText"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -22,7 +25,7 @@
   "isRequired": false,
   "isVisible": true,
   "key": "5mpm9eu6is",
-  "label": "Label",
+  "label": "Carácter",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",

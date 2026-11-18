@@ -5,24 +5,27 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 72,
   "boxShadow": "none",
-  "defaultText": "",
+  "defaultText": "{{ appsmith.store.filaSel ? tblParam.selectedRow.modulos : '' }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "defaultText"
     }
   ],
   "dynamicHeight": "FIXED",
   "iconAlign": "left",
-  "inputType": "TEXT",
+  "inputType": "MULTI_LINE_TEXT",
   "isDisabled": false,
   "isLoading": false,
   "isRequired": false,
   "isVisible": true,
   "key": "5mpm9eu6is",
-  "label": "Label",
+  "label": "Módulos donde se usa(n)",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",

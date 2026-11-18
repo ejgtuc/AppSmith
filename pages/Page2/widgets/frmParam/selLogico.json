@@ -4,13 +4,16 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 63,
   "boxShadow": "none",
-  "defaultOptionValue": "GREEN",
+  "defaultOptionValue": "{{ appsmith.store.filaSel ? tblParam.selectedRow.logico : '' }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "defaultOptionValue"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -27,7 +30,7 @@
   "key": "b9dy1kb4bk",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "Label",
+  "labelText": "Lógico",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
   "leftColumn": 2,
@@ -39,17 +42,17 @@
   "mobileRightColumn": 22,
   "mobileTopRow": 56,
   "needsErrorInfo": false,
-  "optionLabel": "name",
-  "optionValue": "code",
+  "optionLabel": "label",
+  "optionValue": "value",
   "parentColumnSpace": 15.3759765625,
   "parentId": "477hmwndjz",
   "parentRowSpace": 10,
-  "placeholderText": "Select option",
+  "placeholderText": "Seleccione",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 22,
   "serverSideFiltering": false,
-  "sourceData": "[\n  {\n    \"name\": \"Blue\",\n    \"code\": \"BLUE\"\n  },\n  {\n    \"name\": \"Green\",\n    \"code\": \"GREEN\"\n  },\n  {\n    \"name\": \"Red\",\n    \"code\": \"RED\"\n  }\n]",
+  "sourceData": "[\n  {\n    \"label\": \"(vacío)\",\n    \"value\": \"\"\n  },\n  {\n    \"label\": \"Sí\",\n    \"value\": \"S\"\n  },\n  {\n    \"label\": \"No\",\n    \"value\": \"N\"\n  }\n]",
   "topRow": 56,
   "type": "SELECT_WIDGET",
   "version": 1,

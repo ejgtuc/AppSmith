@@ -4,13 +4,16 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 29,
   "boxShadow": "none",
-  "defaultOptionValue": "GREEN",
+  "defaultOptionValue": "{{ appsmith.store.filaSel ? tblParam.selectedRow.tipo : '' }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "defaultOptionValue"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -27,7 +30,7 @@
   "key": "b9dy1kb4bk",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "Label",
+  "labelText": "Tipo del valor",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
   "leftColumn": 2,
@@ -39,17 +42,17 @@
   "mobileRightColumn": 22,
   "mobileTopRow": 22,
   "needsErrorInfo": false,
-  "optionLabel": "name",
-  "optionValue": "code",
+  "optionLabel": "label",
+  "optionValue": "value",
   "parentColumnSpace": 15.3759765625,
   "parentId": "477hmwndjz",
   "parentRowSpace": 10,
-  "placeholderText": "Select option",
+  "placeholderText": "Seleccione tipo",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 22,
   "serverSideFiltering": false,
-  "sourceData": "[\n  {\n    \"name\": \"Blue\",\n    \"code\": \"BLUE\"\n  },\n  {\n    \"name\": \"Green\",\n    \"code\": \"GREEN\"\n  },\n  {\n    \"name\": \"Red\",\n    \"code\": \"RED\"\n  }\n]",
+  "sourceData": "[\n  {\n    \"label\": \"(vacío)\",\n    \"value\": \"\"\n  },\n  {\n    \"label\": \"Número\",\n    \"value\": \"N\"\n  },\n  {\n    \"label\": \"Carácter\",\n    \"value\": \"C\"\n  },\n  {\n    \"label\": \"Fecha\",\n    \"value\": \"D\"\n  },\n  {\n    \"label\": \"Lógico\",\n    \"value\": \"L\"\n  },\n  {\n    \"label\": \"Timestamp\",\n    \"value\": \"T\"\n  }\n]",
   "topRow": 22,
   "type": "SELECT_WIDGET",
   "version": 1,

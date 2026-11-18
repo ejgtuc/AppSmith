@@ -112,7 +112,11 @@
       "key": "tableData"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onRowSelected"
+    }
+  ],
   "enableClientSideSearch": true,
   "endOfData": false,
   "flexVerticalAlignment": "start",
@@ -136,6 +140,7 @@
   "mobileRightColumn": 34,
   "mobileTopRow": 10,
   "needsErrorInfo": false,
+  "onRowSelected": "{{ storeValue(\"filaSel\", tblParam.selectedRow.id); setTimeout(() => { resetWidget(\"inpCodigo\"); resetWidget(\"inpDescripcion\"); resetWidget(\"selTipo\"); resetWidget(\"inpNumero\"); resetWidget(\"inpCaracter\"); resetWidget(\"dpFecha\"); resetWidget(\"selLogico\"); resetWidget(\"dpTimestamp\"); resetWidget(\"inpModulos\"); }, 150); }}",
   "parentColumnSpace": 16.734375,
   "parentId": "0",
   "parentRowSpace": 10,
