@@ -15,7 +15,16 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
   "isDefaultClickDisabled": true,
   "isDisabled": false,
   "isLoading": false,
@@ -28,7 +37,7 @@
   "mobileRightColumn": 63,
   "mobileTopRow": 18,
   "needsErrorInfo": false,
-  "onClick": "",
+  "onClick": "{{ qryParamInsert.run().then(() => {\n     qryParamListado.run();\n     closeModal(\"mdlConfirmar\");\n   }); }}\n",
   "originalBottomRow": 22,
   "originalTopRow": 18,
   "parentId": "68j9w4qkpg",
