@@ -3,13 +3,13 @@ INSERT INTO public.param
    fec_grab, usr_grab, wks_grab, tip_grab, prg_grab)
 VALUES
   (NULLIF({{ inpCodigo.text }}, ''),
-   {{ inpDescripcion.text }},
-   {{ selTipo.selectedOptionValue }},
-   {{ selTipo.selectedOptionValue === 'N' ? Number(inpNumero.text) : null }},
-   {{ selTipo.selectedOptionValue === 'C' ? inpCaracter.text : null }},
+   NULLIF({{ inpDescripcion.text }}, ''),
+   NULLIF({{ selTipo.selectedOptionValue }}, ''),
+   {{ selTipo.selectedOptionValue === 'N' && inpNumero.text ? Number(inpNumero.text) : null }},
+   {{ selTipo.selectedOptionValue === 'C' ? NULLIF(inpCaracter.text, '') : null }},
    {{ selTipo.selectedOptionValue === 'D' ? dpFecha.formattedDate : null }},
-   {{ selTipo.selectedOptionValue === 'L' ? selLogico.selectedOptionValue : null }},
-   {{ inpModulos.text }},
+   {{ selTipo.selectedOptionValue === 'L' ? NULLIF(selLogico.selectedOptionValue, '') : null }},
+   NULLIF({{ inpModulos.text }}, ''),
    {{ selTipo.selectedOptionValue === 'T' ? dpTimestamp.formattedDate : null }},
    now(), 'WEB', 'LOCAL', 'I', 'appsmith/param')
 ON CONFLICT (codigo) DO UPDATE SET
