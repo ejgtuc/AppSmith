@@ -8,7 +8,7 @@
   "closeOnSelection": true,
   "dateFormat": "YYYY-MM-DD",
   "datePickerType": "DATE_PICKER",
-  "defaultDate": "2026-11-17T12:50:57.867Z",
+  "defaultDate": "{{ tblParam.selectedRow.fecha }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -18,6 +18,9 @@
     },
     {
       "key": "isVisible"
+    },
+    {
+      "key": "defaultDate"
     }
   ],
   "dynamicHeight": "FIXED",
