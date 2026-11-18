@@ -1,0 +1,5 @@
+SELECT {{ inpCodigo.text }}              AS codigo,
+       {{ inpDescripcion.text }}         AS descripcion,
+       {{ selTipo.selectedOptionValue }} AS tipo,
+       {{ inpNumero.text }}              AS numero_raw,
+       {{ inpModulos.text }}             AS modulos;
