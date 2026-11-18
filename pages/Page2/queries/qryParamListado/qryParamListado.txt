@@ -1,0 +1,6 @@
+SELECT id, codigo, descripcion, tipo, numero, caracter, fecha, timestamp, logico,
+       modulos, fec_grab, tip_grab
+FROM public.param
+ORDER BY id DESC
+LIMIT 50;
+

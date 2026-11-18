@@ -2,15 +2,15 @@ INSERT INTO public.param
   (codigo, descripcion, tipo, numero, caracter, fecha, logico, modulos, timestamp,
    fec_grab, usr_grab, wks_grab, tip_grab, prg_grab)
 VALUES
-  (NULLIF({{ inpCodigo.text }}, ''),
-   NULLIF({{ inpDescripcion.text }}, ''),
-   NULLIF({{ selTipo.selectedOptionValue }}, ''),
-   {{ selTipo.selectedOptionValue === 'N' && inpNumero.text ? Number(inpNumero.text) : null }},
-   {{ selTipo.selectedOptionValue === 'C' ? NULLIF(inpCaracter.text, '') : null }},
-   {{ selTipo.selectedOptionValue === 'D' ? dpFecha.formattedDate : null }},
-   {{ selTipo.selectedOptionValue === 'L' ? NULLIF(selLogico.selectedOptionValue, '') : null }},
-   NULLIF({{ inpModulos.text }}, ''),
-   {{ selTipo.selectedOptionValue === 'T' ? dpTimestamp.formattedDate : null }},
+  (NULLIF({{ inpCodigo.text }}::text, ''),
+   NULLIF({{ inpDescripcion.text }}::text, ''),
+   NULLIF({{ selTipo.selectedOptionValue }}::text, ''),
+   NULLIF({{ inpNumero.text }}::text, '')::numeric,
+   NULLIF({{ inpCaracter.text }}::text, ''),
+   NULLIF({{ dpFecha.formattedDate }}::text, '')::date,
+   NULLIF({{ selLogico.selectedOptionValue }}::text, ''),
+   NULLIF({{ inpModulos.text }}::text, ''),
+   NULLIF({{ dpTimestamp.formattedDate }}::text, '')::timestamp,
    now(), 'WEB', 'LOCAL', 'I', 'appsmith/param')
 ON CONFLICT (codigo) DO UPDATE SET
    descripcion = EXCLUDED.descripcion,
