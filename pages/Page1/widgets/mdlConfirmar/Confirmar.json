@@ -15,11 +15,7 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicTriggerPathList": [
-    {
-      "key": "onClick"
-    }
-  ],
+  "dynamicTriggerPathList": [],
   "isDefaultClickDisabled": true,
   "isDisabled": false,
   "isLoading": false,
@@ -32,7 +28,7 @@
   "mobileRightColumn": 63,
   "mobileTopRow": 18,
   "needsErrorInfo": false,
-  "onClick": "{{showModal(mdlConfirmar.name);}}",
+  "onClick": "",
   "originalBottomRow": 22,
   "originalTopRow": 18,
   "parentId": "68j9w4qkpg",
@@ -42,7 +38,7 @@
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
   "rightColumn": 63,
-  "text": "Confirm",
+  "text": "Confirmar",
   "topRow": 16,
   "type": "BUTTON_WIDGET",
   "version": 1,
