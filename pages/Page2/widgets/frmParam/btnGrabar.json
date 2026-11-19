@@ -1,0 +1,53 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 82,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": true,
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "2i3d1gxrut",
+  "leftColumn": 16,
+  "minWidth": 120,
+  "mobileBottomRow": 37,
+  "mobileLeftColumn": 46,
+  "mobileRightColumn": 62,
+  "mobileTopRow": 33,
+  "needsErrorInfo": false,
+  "onClick": "{{ qryParamUpsert.run().then(() => { qryParamListado.run(); removeValue(\"filaSel\"); resetWidget(\"inpCodigo\"); resetWidget(\"inpDescripcion\"); resetWidget(\"selTipo\"); resetWidget(\"inpNumero\"); resetWidget(\"inpCaracter\"); resetWidget(\"dpFecha\"); resetWidget(\"selLogico\"); resetWidget(\"dpTimestamp\"); resetWidget(\"inpModulos\"); }); }}\n",
+  "parentId": "477hmwndjz",
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 27,
+  "text": "Grabar",
+  "topRow": 78,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "3o09mlz70g",
+  "widgetName": "btnGrabar"
+}

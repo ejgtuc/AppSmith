@@ -14,29 +14,40 @@
       "key": "borderRadius"
     }
   ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
   "isDefaultClickDisabled": true,
   "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
   "key": "2i3d1gxrut",
-  "leftColumn": 28,
+  "leftColumn": 2,
   "minWidth": 120,
   "mobileBottomRow": 37,
   "mobileLeftColumn": 30,
   "mobileRightColumn": 46,
   "mobileTopRow": 33,
   "needsErrorInfo": false,
+  "onClick": "{{ removeValue(\"filaSel\"); resetWidget(\"inpCodigo\"); resetWidget(\"inpDescripcion\"); resetWidget(\"selTipo\"); resetWidget(\"inpNumero\"); resetWidget(\"inpCaracter\"); resetWidget(\"dpFecha\"); resetWidget(\"selLogico\"); resetWidget(\"dpTimestamp\"); resetWidget(\"inpModulos\"); }}\n",
   "parentId": "477hmwndjz",
   "placement": "CENTER",
   "recaptchaType": "V3",
   "renderMode": "CANVAS",
-  "resetFormOnClick": true,
+  "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 44,
-  "text": "Reset",
+  "rightColumn": 13,
+  "text": "Limpiar",
   "topRow": 78,
   "type": "BUTTON_WIDGET",
   "version": 1,
   "widgetId": "a75ri6dkxk",
-  "widgetName": "Button2"
+  "widgetName": "btnLimpiar"
 }

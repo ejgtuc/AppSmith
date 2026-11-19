@@ -1,0 +1,59 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 82,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": true,
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": "{{ !tblParam.selectedRow.id }}\n",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "2i3d1gxrut",
+  "leftColumn": 31,
+  "minWidth": 120,
+  "mobileBottomRow": 37,
+  "mobileLeftColumn": 46,
+  "mobileRightColumn": 62,
+  "mobileTopRow": 33,
+  "needsErrorInfo": false,
+  "onClick": "{{ qryParamDelete.run().then(() => { qryParamListado.run(); removeValue(\"filaSel\"); resetWidget(\"inpCodigo\"); resetWidget(\"inpDescripcion\"); resetWidget(\"selTipo\"); resetWidget(\"inpNumero\"); resetWidget(\"inpCaracter\"); resetWidget(\"dpFecha\"); resetWidget(\"selLogico\"); resetWidget(\"dpTimestamp\"); resetWidget(\"inpModulos\"); }); }}\n",
+  "parentId": "477hmwndjz",
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 42,
+  "text": "Borrar",
+  "topRow": 78,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "w29mrtj1a2",
+  "widgetName": "btnBorrar"
+}
