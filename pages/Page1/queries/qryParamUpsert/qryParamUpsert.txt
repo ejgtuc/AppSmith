@@ -2,16 +2,16 @@ INSERT INTO public.param
   (codigo, descripcion, tipo, numero, caracter, fecha, logico, modulos, timestamp,
    fec_grab, usr_grab, wks_grab, tip_grab, prg_grab)
 VALUES
-  (NULLIF({{ inpCodigo.text }}::text, ''),
-   NULLIF({{ inpDescripcion.text }}::text, ''),
-   NULLIF({{ selTipo.selectedOptionValue }}::text, ''),
-   NULLIF({{ inpNumero.text }}::text, '')::numeric,
-   NULLIF({{ inpCaracter.text }}::text, ''),
-   NULLIF({{ dpFecha.formattedDate }}::text, '')::date,
-   NULLIF({{ selLogico.selectedOptionValue }}::text, ''),
-   NULLIF({{ inpModulos.text }}::text, ''),
-   NULLIF({{ dpTimestamp.formattedDate }}::text, '')::timestamp,
-   now(), 'WEB', 'LOCAL', 'I', 'appsmith/param')
+  (NULLIF({{ inpCodigo.text || '' }}, ''),
+   NULLIF({{ inpDescripcion.text || '' }}, ''),
+   NULLIF({{ selTipo.selectedOptionValue || '' }}, ''),
+   NULLIF(CASE WHEN {{ selTipo.selectedOptionValue || '' }} = 'N' THEN {{ inpNumero.text || '' }} ELSE '' END, '')::numeric,
+   NULLIF(CASE WHEN {{ selTipo.selectedOptionValue || '' }} = 'C' THEN {{ inpCaracter.text || '' }} ELSE '' END, ''),
+   NULLIF(CASE WHEN {{ selTipo.selectedOptionValue || '' }} = 'D' THEN {{ dpFecha.formattedDate || '' }} ELSE '' END, '')::date,
+   NULLIF(CASE WHEN {{ selTipo.selectedOptionValue || '' }} = 'L' THEN {{ selLogico.selectedOptionValue || '' }} ELSE '' END, ''),
+   NULLIF({{ inpModulos.text || '' }}, ''),
+   NULLIF(CASE WHEN {{ selTipo.selectedOptionValue || '' }} = 'T' THEN {{ dpTimestamp.formattedDate || '' }} ELSE '' END, '')::timestamp,
+   now(), 'WEB', 'LOCAL', 'A', 'appsmith/param')
 ON CONFLICT (codigo) DO UPDATE SET
    descripcion = EXCLUDED.descripcion,
    tipo        = EXCLUDED.tipo,
@@ -24,6 +24,6 @@ ON CONFLICT (codigo) DO UPDATE SET
    fec_grab    = now(),
    usr_grab    = 'WEB',
    wks_grab    = 'LOCAL',
-   tip_grab    = 'U',
+   tip_grab    = 'M',
    prg_grab    = 'appsmith/param'
 RETURNING id, (xmax = 0) AS insertado;
