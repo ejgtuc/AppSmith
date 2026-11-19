@@ -17,12 +17,15 @@
     },
     {
       "key": "defaultDate"
+    },
+    {
+      "key": "isDisabled"
     }
   ],
   "dynamicHeight": "FIXED",
   "dynamicTriggerPathList": [],
   "firstDayOfWeek": 0,
-  "isDisabled": false,
+  "isDisabled": "{{ selTipo.selectedOptionValue !== 'D' }}",
   "isLoading": false,
   "isRequired": false,
   "isVisible": true,

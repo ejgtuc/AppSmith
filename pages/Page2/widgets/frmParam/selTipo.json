@@ -22,7 +22,11 @@
       "key": "sourceData"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
   "isDisabled": false,
   "isFilterable": true,
   "isLoading": false,
@@ -43,6 +47,7 @@
   "mobileRightColumn": 22,
   "mobileTopRow": 22,
   "needsErrorInfo": false,
+  "onOptionChange": "{{ resetWidget(\"inpNumero\"); resetWidget(\"inpCaracter\"); resetWidget(\"dpFecha\"); resetWidget(\"selLogico\"); resetWidget(\"dpTimestamp\"); }}",
   "optionLabel": "label",
   "optionValue": "value",
   "parentColumnSpace": 15.3759765625,
