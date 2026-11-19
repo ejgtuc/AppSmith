@@ -34,6 +34,7 @@
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
   "rightColumn": 56,
+  "tabOrder": 15,
   "text": "Terminar",
   "topRow": 78,
   "type": "BUTTON_WIDGET",

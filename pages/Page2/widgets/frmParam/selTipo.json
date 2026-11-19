@@ -22,6 +22,7 @@
       "key": "sourceData"
     }
   ],
+  "dynamicTriggerPathList": [],
   "isDisabled": false,
   "isFilterable": true,
   "isLoading": false,
@@ -53,6 +54,7 @@
   "rightColumn": 22,
   "serverSideFiltering": false,
   "sourceData": "[\n  {\n    \"label\": \"(vacío)\",\n    \"value\": \"\"\n  },\n  {\n    \"label\": \"Número\",\n    \"value\": \"N\"\n  },\n  {\n    \"label\": \"Carácter\",\n    \"value\": \"C\"\n  },\n  {\n    \"label\": \"Fecha\",\n    \"value\": \"D\"\n  },\n  {\n    \"label\": \"Lógico\",\n    \"value\": \"L\"\n  },\n  {\n    \"label\": \"Timestamp\",\n    \"value\": \"T\"\n  }\n]",
+  "tabOrder": 5,
   "topRow": 22,
   "type": "SELECT_WIDGET",
   "version": 1,

@@ -50,6 +50,7 @@
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
   "rightColumn": 42,
+  "tabOrder": 14,
   "text": "Borrar",
   "topRow": 78,
   "type": "BUTTON_WIDGET",

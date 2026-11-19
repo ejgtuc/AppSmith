@@ -18,6 +18,7 @@
     }
   ],
   "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [],
   "iconAlign": "left",
   "inputType": "TEXT",
   "isDisabled": false,
@@ -48,6 +49,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 22,
   "showStepArrows": false,
+  "tabOrder": 6,
   "topRow": 30,
   "type": "INPUT_WIDGET_V2",
   "version": 2,

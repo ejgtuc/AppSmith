@@ -22,6 +22,7 @@
       "key": "sourceData"
     }
   ],
+  "dynamicTriggerPathList": [],
   "isDisabled": false,
   "isFilterable": true,
   "isLoading": false,
@@ -53,6 +54,7 @@
   "rightColumn": 22,
   "serverSideFiltering": false,
   "sourceData": "[\n  {\n    \"label\": \"(vacío)\",\n    \"value\": \"\"\n  },\n  {\n    \"label\": \"Sí\",\n    \"value\": \"S\"\n  },\n  {\n    \"label\": \"No\",\n    \"value\": \"N\"\n  }\n]",
+  "tabOrder": 10,
   "topRow": 56,
   "type": "SELECT_WIDGET",
   "version": 1,

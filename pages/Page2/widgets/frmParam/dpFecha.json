@@ -20,6 +20,7 @@
     }
   ],
   "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [],
   "firstDayOfWeek": 0,
   "isDisabled": false,
   "isLoading": false,
@@ -49,6 +50,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 22,
   "shortcuts": false,
+  "tabOrder": 8,
   "timePrecision": "minute",
   "topRow": 47,
   "type": "DATE_PICKER_WIDGET2",
