@@ -1,0 +1,20 @@
+{
+  "gitSyncId": "6afb0abfb7e50bd190f2e691_39f24dfe-242f-41d4-811f-2858f685d739",
+  "id": "Courses2_utils",
+  "unpublishedCollection": {
+    "name": "utils",
+    "pageId": "Courses2",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "updatedSubjectName",
+        "value": "''"
+      },
+      {
+        "name": "subject",
+        "value": "{}"
+      }
+    ]
+  }
+}

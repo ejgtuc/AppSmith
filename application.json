@@ -9,8 +9,36 @@
   "evaluationVersion": 2,
   "pages": [
     {
+      "id": "Courses2",
+      "isDefault": false
+    },
+    {
+      "id": "Modules2",
+      "isDefault": false
+    },
+    {
+      "id": "Content2",
+      "isDefault": false
+    },
+    {
+      "id": "Courses",
+      "isDefault": false
+    },
+    {
+      "id": "Modules",
+      "isDefault": false
+    },
+    {
+      "id": "Content",
+      "isDefault": false
+    },
+    {
       "id": "Page2",
       "isDefault": true
+    },
+    {
+      "id": "Page3",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {
