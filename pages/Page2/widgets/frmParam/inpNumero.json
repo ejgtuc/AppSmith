@@ -51,6 +51,7 @@
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
   "rightColumn": 22,
+  "shouldAllowAutofill": false,
   "showStepArrows": false,
   "tabOrder": 6,
   "topRow": 30,

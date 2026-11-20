@@ -1,5 +1,0 @@
-SELECT * FROM public."param"
-WHERE codigo ILIKE '%' || {{ inpBuscar.text }} || '%'
-   OR descripcion ILIKE '%' || {{ inpBuscar.text }} || '%'
-	 ORDER BY id DESC
-LIMIT 10;
